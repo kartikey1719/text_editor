@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My Text Editor</h1>
+
+    <h3>Background Colour</h3>
+    <button style="background:black" onclick="changeBg('black')"></button>
+    <button style="background:grey" onclick="changeBg('grey')"></button>
+    <button style="background:red" onclick="changeBg('red')"></button>
+    <button style="background:yellow" onclick="changeBg('yellow')"></button>
+    <button style="background:green" onclick="changeBg('green')"></button>
+    <button style="background:blue" onclick="changeBg('blue')"></button>
+
+    <h3>Text Colour</h3>
+    <button style="background:black" onclick="changeText('black')"></button>
+    <button style="background:grey" onclick="changeText('grey')"></button>
+    <button style="background:red" onclick="changeText('red')"></button>
+    <button style="background:yellow" onclick="changeText('yellow')"></button>
+    <button style="background:green" onclick="changeText('green')"></button>
+    <button style="background:blue" onclick="changeText('blue')"></button>
+
+    <h3>Font Family</h3>
+    <select id="font" onchange="changeFont()">
+        <option>Arial</option>
+        <option>Georgia</option>
+        <option>Verdana</option>
+        <option>Courier New</option>
+        <option>Times New Roman</option>
+    </select>
+    <br><br>
+
+    <textarea id="editor" placeholder="Type here..."></textarea>
+    <script src="script.js"></script>
+
+</body>
+</html>
